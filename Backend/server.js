@@ -1,6 +1,7 @@
 
 const express = require('express');
 const connectDataBase = require('./configs/db.config');
+const authRouter = require('./routes/auth.route');
 require('dotenv').config() 
 
 const app = express();
@@ -16,7 +17,7 @@ app.get('/test', (req, res) => {
     res.status(200).json({msg : "I am Test Route"})
 });
 
-
+app.use('/api', authRouter)
 
 
 
