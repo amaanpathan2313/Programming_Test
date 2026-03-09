@@ -1,1 +1,9 @@
 # Programming_Test
+
+.env file crendicials : 
+
+PORT = 3000
+
+MONGO_DB_LINK = 'mongodb://127.0.0.1:27017/programming_test'
+
+KEY = 'amaan'
